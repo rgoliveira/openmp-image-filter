@@ -1,0 +1,11 @@
+#!/usr/bin/gnuplot
+@png
+set palette gray
+set cbrange [0 to 255]
+set output system("echo $output")
+unset border
+unset xtics
+unset ytics
+unset key
+unset colorbox
+plot system("echo $input") matrix with image
